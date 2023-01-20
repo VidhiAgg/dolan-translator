@@ -1,0 +1,132 @@
+:root {
+    --primary-color: rgb(4, 36, 64);
+    --highlighted-font-color: rgb(211, 232, 241);
+    --max-width: 600px;
+    --second-highlighted-color: #FFD700;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+
+    background: linear-gradient(-90deg, rgb(146, 196, 216) 1%, rgba(10, 69, 122, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+
+
+}
+
+textarea {
+    margin: auto;
+    margin-top: 2rem;
+    max-height: 25vh;
+    padding: 1rem;
+    font-size: 1rem;
+    display: block;
+    box-sizing: border-box;
+    width: 25rem;
+    height: 6rem;
+    border: groove var(--primary-color);
+    border-radius: 1em;
+    margin-bottom: 2rem;
+    background-color: var(--highlighted-font-color);
+    color: rgb(2, 25, 45);
+}
+
+.grid-item {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+}
+
+.project-heading {
+    margin-block-start: 0em;
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Kalam', cursive;
+    color: var(--primary-color);
+    -webkit-text-stroke-color: var(--highlighted-font-color);
+    -webkit-text-stroke-width: 1px;
+
+}
+
+.project-heading h1 {
+    margin-block-start: 0em;
+    margin-bottom: 2px;
+}
+
+main {
+    max-width: var(--max-width);
+    padding: 1rem;
+}
+
+button {
+    background-color: var(--second-highlighted-color);
+    border: none;
+    display: block;
+    margin: auto;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-radius: 12%;
+
+}
+
+button:hover,
+button:focus {
+    border-bottom: solid var(--primary-color);
+
+}
+
+#output {
+    padding: 1rem;
+    display: none;
+    box-sizing: border-box;
+    width: 25rem;
+    height: 6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+@media(min-width : 576px) {
+    main {
+        display: flex;
+    }
+
+    .main-left {
+        flex-direction: column;
+    }
+
+    .main-right {
+        flex-basis: 70%;
+        margin: auto 3rem
+    }
+
+    textarea {
+        width: 35rem;
+    }
+
+    #output {
+        width: 35rem;
+    }
+
+}
+
+
+#image-container {
+    height: 29rem;
+    width: 28rem;
+    padding: 0px;
+}
