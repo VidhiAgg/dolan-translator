@@ -111,7 +111,7 @@ button:focus {
 
     .main-right {
         flex-basis: 70%;
-        margin: auto 3rem
+        margin-left: 7rem;
     }
 
     textarea {
